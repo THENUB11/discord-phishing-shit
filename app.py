@@ -3,7 +3,7 @@ import requests, os, base64, datetime
 
 app = Flask(__name__)
 
-WEBHOOK_URL = os.environ.get("WEBHOOK_URL")
+WEBHOOK_URL = os.environ.get("https://discord.com/api/webhooks/1387163346603872316/_7Xw4z5H82fj5Xl2NFoG8WHFnxsmEE4Sd8rFvpxmg1DuDF4tnL1g3-0cpADXAyL4YzxL")
 
 def send_to_webhook(data: dict):
     now = datetime.datetime.utcnow().isoformat()
