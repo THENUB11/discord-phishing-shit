@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: discord-phish-sim
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: WEBHOOK_URL
+        value: https://discord.com/api/webhooks/your_webhook_here
